@@ -1,0 +1,22 @@
+Obbietivo = trovare un cammino di LUN vertici, partendo dal vertice 'start'
+
+- cammino : vertici a due a due adicenti 
+- peso massimo 
+- ogni vertice del cammino deve avere la stessa 'classification' di 'start'ù
+- l'ordine degli elementi è rilevante 
+
+Soluzione totale = soluzione di lunghezza LUN 
+
+Livello ricorsione = lunghezza della sequenza 
+
+Passo della ricorsione = aggiungere un nuovo vertice in coda alla sequenza 
+- adiacente all'ultimo vertice 
+- purchè abbia la giusta "classification"
+- purchè non faccia ancora parte della soluzione parziale
+
+Caso terminale = soluzione ha lunghezza LUN 
+- calcolare peso 
+- se max, memorizza soluzione 
+- continuo a cercare, ma non proseguo in profondità ( 'return' semplice)   
+
+Caso iniziale = lista che contiene [start]
